@@ -1,0 +1,75 @@
+/* Global */
+:root {
+  /* App Colors */
+  --color-primary: var(--color-light-blue);
+  --color-accent: var(--color-gold-yellow);
+  --color-text: var(--color-dark-grey);
+
+  /* Color */
+  --color-light-white: #eeeeee;
+  --color-blue-white: #f2f3f7; /*백그라운드색상*/
+  --color-dark-white: #bdbdbd;
+  --color-dark-grey: #4d4d4d;
+  --color-light-grey: #7c7979;
+  --color-light-blue: #a7aeca; /*메인색상*/
+  --color-gray-black: #333333;
+  --color-gold-yellow: #ffefd5; /*강조색상*/
+
+  /* Font size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+  --weight-semi-thin: 300;
+  --weight-thin: 500;
+
+  /* Size */
+  --size-border-radius: 5px;
+
+  /* Animation */
+  --animation-duration: 300ms;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+      font-family: 'Noto Sans JP', sans-serif;
+      background-color: var(--color-blue-white) /* 배경색을 여기에 원하는 색상 코드로 변경합니다. */
+  /* 예: #ff0000은 빨간색을 나타냅니다. */
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+button {
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+}
+
+button:focus {
+  outline: 1px solid var(--color-accent);
+}

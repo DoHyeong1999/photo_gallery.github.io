@@ -14,8 +14,8 @@
   <!-- OG -->
   <meta property="og:title" content="キムドヒョン卒業制作サイト">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="まだ決めてない">
-  <meta property="og:image" content="배포후에 생성된이미지 url">
+  <!-- <meta property="og:url" content="まだ決めてない"> -->
+  <!-- <meta property="og:image" content="배포후에 생성된이미지 url"> -->
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,44 +33,202 @@
   <script src="src/main.js" defer></script>
 </head>
 <body>
+  
   <!-- Header -->
   <header>
-    <div>
-      <img src="images/favicon.ico" alt="logo">
-      <h1><a href="#">記憶の欠片ギャラリー</a></h1>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#kawaguchi">川口</a></li>
-        <li><a href="#shinkoiwa">新小岩</a></li>
-        <li><a href="#kinshicho">錦糸町</a></li>
-        <li><a href="#album">Album</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+        <!-- Navbar -->
+        <nav id="navbar">
+          <div class="navbar__logo">
+              <img src="images/favicon.ico" alt="logo">
+          </div>
+          <div>
+              <ul class="navbar__menu">
+                  <li class="navbar__menu__item active" data-link="home">Home</li>
+                  <li class="navbar__menu__item" data-link="#kawaguchi">川口</li>
+                  <li class="navbar__menu__item" data-link="#shinkoiwa">新小岩</li>
+                  <li class="navbar__menu__item" data-link="#kinshicho">錦糸町</li>
+                  <li class="navbar__menu__item" data-link="#album">Album</li>
+                  <li class="navbar__menu__item" data-link="#contact">Contact</li>
+              </ul>
+          </div>
+          <!-- Toggle button -->
+          <button class="navbar__toggle-btn">
+              <i class="fa-solid fa-bars"></i>
+          </button>
+      </nav>
   </header>
   <!-- Main -->
   <main>
     <!-- Home PHOTO -->
     <section id="home">
-      <!-- <img src="" alt=""> -->
-      <!-- <h2></h2> -->
-      <!-- <p></p> -->
+    <div class="home__container">
+      <!-- <img src="메인사진" alt="메인사진"> -->
+      <h2>記憶の欠片ギャラリー</h2>
+      <p>今まで、ありがとうございました。</p>
       <a href="#contact">Contact Me</a>
+    </div>
     </section>
     <!-- KAWAGUCHI -->
-    <section id="kawaguchi"></section>
+    <section id="kawaguchi">
+      <h2>川口</h2>
+      <h3>現在</h3>
+      <!-- <p></p> -->
+      <div>
+        <ul>
+          <li>
+            <!-- <img src="" alt=""> -->
+            <p>여기는</p>
+          </li>
+          <li>
+            <!-- <img src="" alt=""> -->
+            <p>내가</p>
+          </li>
+          <li>
+            <!-- <img src="" alt=""> -->
+            <p>지금 살고있는</p>
+          </li>
+          <li>
+            <!-- <img src="" alt=""> -->
+            <p>장소입니다</p>
+          </li>
+        </ul>
+    </div>
+    </section>
     <!-- SHINKOIWA -->
-    <section id="shinkoiwa"></section>
+    <section id="shinkoiwa">
+      <h2>新小岩</h2>
+      <h3>過去</h3>
+      <!-- <p></p> -->
+    <div>
+      <ul>
+        <li>
+          <!-- <img src="" alt=""> -->
+          <p></p>
+        </li>
+        <li>
+          <!-- <img src="" alt=""> -->
+          <p></p>
+        </li>
+        <li>
+          <!-- <img src="" alt=""> -->
+          <p></p>
+        </li>
+      </ul>
+    </div>
+    </section>
     <!-- KINSHICHO -->
-    <section id="kinshicho"></section>
+    <section id="kinshicho">
+      <h2>킨시쵸데스</h2>
+      <h3>노는법</h3>
+      <!-- <p></p> -->
+    <div>
+      <ul>
+        <li>
+          <!-- <img src="" alt=""> -->
+          <p></p>
+        </li>
+        <li>
+          <!-- <img src="" alt=""> -->
+          <p></p>
+        </li>
+        <li>
+          <!-- <img src="" alt=""> -->
+          <p></p>
+        </li>
+        <li>
+          <!-- <img src="" alt=""> -->
+          <!-- <p></p> -->
+        </li>
+      </ul>
+    </div>
+    </section>
     <!-- ALBUM -->
-    <section id="album"></section>
+    <section id="album" class="section">
+      <!-- 스크립트가 없는 한, data-link 속성은 기본적으로 링크를 처리하지 않습니다.
+      JavaScript 또는 jQuery와 같은 스크립트를 사용하여 클릭 이벤트를 처리하고 해당 링크가
+      스크롤 또는 페이지 이동을 트리거하도록 설정해야 할 수 있습니다. -->
+      <div class="section__container">
+          <h1>ALBUM</h1>
+          <h3>Photos</h3>
+          <div class="album__photos">
+              <button class="category__btn selected" data-filter="*">
+                  All <span class="category__count">12</span>
+              </button>
+              <button class="category__btn" data-filter="kawaguchi">
+                  川口 <span class="category__count">4</span>
+              </button>
+              <button class="category__btn" data-filter="shinkoiwa">
+                  新小岩 <span class="category__count">4</span>
+              </button>
+              <button class="category__btn" data-filter="kinshicho">
+                  錦糸町 <span class="category__count">4</span>
+              </button>
+          </div>
+              <ul>
+                <li>
+                  <img src="" alt="">
+                  <div></div>
+                </li>
+                <li>
+                  <img src="" alt="">
+                  <div></div>
+                </li>
+                <li>
+                  <img src="" alt="">
+                  <div></div>
+                </li>
+                <li>
+                  <img src="" alt="">
+                  <div></div>
+                </li>
+                <li>
+                  <img src="" alt="">
+                  <div></div>
+                </li>
+                <li>
+                  <img src="" alt="">
+                  <div></div>
+                </li>
+                <li>
+                  <img src="" alt="">
+                  <div></div>
+                </li>
+                <li>
+                  <img src="" alt="">
+                  <div></div>
+                </li>
+                <li>
+                  <img src="" alt="">
+                  <div></div>
+                </li>
+                <li>
+                  <img src="" alt="">
+                  <div></div>
+                </li>
+                <li>
+                  <img src="" alt="">
+                  <div></div>
+                </li>
+                <li>
+                  <img src="" alt="">
+                  <div></div>
+                </li>
+              </ul>
+      </div>
+      </section>
     <!-- Arrow Up -->
-    <aside></aside>
+    <aside>
+      <a href="#home" title="back to top">
+        <i class="fa-solid fa-angle-up" style="color: #a7aeca;"></i>
+      </a>
+    </aside>
   </main>
   <!-- Footer -->
-  <footer id="contact"></footer>
+  <footer id="contact">
+    <h2>Thank you</h2>
+    <p>ehguddk88@gmail.com</p>
+    <p>+81 010-7965-7139</p>
+    <p>KIM DOHYEONG - All rights reserved</p>
+  </footer>
 </body>
 </html>
