@@ -16,7 +16,7 @@
   --color-light-grey: #7c7979;
   --color-light-blue: #a7aeca; /*메인색상*/
   --color-gray-black: #333333;
-  --color-gold-yellow: #ffefd5; /*강조색상*/
+  --color-gold-yellow: #6a77ff; /*강조색상*/
 
   /* Font size */
   --font-large: 48px;
@@ -46,8 +46,9 @@
 body {
       font-family: 'Noto Sans JP', sans-serif;
       margin: 0;
-      background-color: var(--color-blue-white) /* 배경색을 여기에 원하는 색상 코드로 변경합니다. */
-  /* 예: #ff0000은 빨간색을 나타냅니다. */
+      background-color: var(--color-blue-white);
+        /* 배경색을 여기에 원하는 색상 코드로 변경합니다. */
+        /* 예: #ff0000은 빨간색을 나타냅니다. */
 }
 
 h1,
@@ -87,14 +88,19 @@ button:focus {
 
 /* Header */
 .header {
-  background-color: #000000;
+  background-color: var(--color-blue-white);
   position: fixed;
+  opacity: 0;
+  transition: opacity 1.2s ease-out;
   top: 0;
   width: 100%;
-  padding: 1rem;
+  padding: 0.3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0px 1.4px 8px var(--color-dark-grey); 
+  /* 그림자 추가 */
+  z-index: 1;
 }
 
 .header__logo {
@@ -118,9 +124,75 @@ button:focus {
 }
 
 .header__menu__item {
-  padding: 8px 20px;
+  padding: 8px 22px;
+}
+
+.header:hover {
+  opacity: 1;
 }
 
 .header__menu__item:hover {
-  border-bottom: 1px solid var(--color-gold-yellow);
+  border-bottom: 1.8px solid var(--color-dark-grey);
+}
+
+/* HOME */
+#home {
+  background-color: var(--color-blue-white);
+  color: var(--color-text);
+  /* padding: 0rem 1rem; */
+  /* padding-top: 88px; */
+  text-align: center;
+}
+
+.home__photo {
+  /* 1960px */
+  width: 1220px;
+  height: 880px;
+  padding-top: 4rem;
+  object-fit: cover;
+  opacity: 0.6;  
+  /* 초기 투명도 설정 */
+  transition: opacity 6s ease-out; 
+  /* 트랜지션 효과 설정 */
+  box-shadow: 0px 1.4px 10px var(--color-dark-grey); 
+}
+
+.home__photo:hover {
+  opacity: 1;
+}
+
+.home__title {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-thin);
+  transform: translate(-50%,-50%);
+  position: absolute;
+  top: 80%;
+  left: 15%;
+  color: var(--color-dark-grey);
+  text-shadow: 
+  -8px -8px 12px rgba(255,255,255,0.4),
+  8px 8px 12px rgba(0,0,0,0.08);
+  caret-color:#262626;
+  white-space: pre-wrap;
+  outline: none;
+}
+
+.home__description {
+  font-size: 1.5rem;
+  white-space: pre-wrap;
+}
+
+.home__contact {
+  display: inline-block;
+  border-radius: 4px;
+  box-shadow:  
+  9px 9px 29px #cfd2d7,
+  -9px -9px 29px #fdffff;
+  padding: 0.2rem 0.5rem;
+}
+
+.home__contact:hover {
+  background-color: transparent;
+  color: var(--color-dark-grey);
+  outline: 2px solid var(--color-gold-yellow);
 }
