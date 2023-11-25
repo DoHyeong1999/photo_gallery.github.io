@@ -46,6 +46,7 @@
 body {
       font-family: 'Noto Sans JP', sans-serif;
       margin: 0;
+      /* background: linear-gradient(#f2f3f7, #7c7979); */
       background-color: var(--color-blue-white);
         /* 배경색을 여기에 원하는 색상 코드로 변경합니다. */
         /* 예: #ff0000은 빨간색을 나타냅니다. */
@@ -88,7 +89,7 @@ button:focus {
 
 /* Common */
 .section {
-  padding: 4px;
+  padding: 50px 4px;
   text-align: center;
 }
 
@@ -154,11 +155,13 @@ button:focus {
 
 /* HOME */
 #home {
+  /* background: linear-gradient(#7c7979, #f2f3f7); */
   background-color: var(--color-blue-white);
   color: var(--color-text);
   /* padding: 0rem 1rem; */
   /* padding-top: 88px; */
   text-align: center;
+  position: relative;
 }
 
 .home__photo {
@@ -181,10 +184,8 @@ button:focus {
 .home__title {
   font-size: var(--font-medium);
   font-weight: var(--weight-thin);
-  transform: translate(-50%,-50%);
-  position: absolute;
-  top: 84%;
-  left: 15%;
+  /* text-align: left; */
+  padding: 0 0 0.5rem 1.5rem;
   color: var(--color-gray-black);
   text-shadow: 
   -8px -8px 12px rgba(255,255,255,0.4),
@@ -192,12 +193,17 @@ button:focus {
   caret-color:#262626;
   white-space: pre-wrap;
   outline: none;
+  /* position: relative;
+  top: 50%;
+  position: absolute; */
 }
 
 .home__description {
   font-size: var(--font-medium);
   font-weight: var(--weight-thin);
   white-space: pre-wrap;
+  /* text-align: left; */
+  padding: 0 0 0 1.5rem;
 }
 
 .home__contact {
@@ -206,6 +212,7 @@ button:focus {
   box-shadow:  
   9px 9px 29px #cfd2d7,
   -9px -9px 29px #fdffff;
+  margin-top: 1rem;
   padding: 0.2rem 0.5rem;
 }
 
@@ -215,6 +222,11 @@ button:focus {
   outline: 2px solid var(--color-gold-yellow);
 }
 
+/* KAWAGUCHI */
+#kawaguchi {
+  /* background: linear-gradient(#f2f3f7, #7c7979); */
+  padding: 50px 0px;
+}
 .kawa__item {
   display: flex;
   flex-direction: column;
@@ -223,6 +235,12 @@ button:focus {
   text-align: center;
   /* 텍스트 정렬 */
   margin-bottom: 20px;
+}
+
+.kawa__title {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  color: var(--color-gray-black);
 }
 
 .kawa__photo {
@@ -236,6 +254,67 @@ button:focus {
 }
 
 .kawa__photo__main {
-  width: 800px;
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  opacity: 1;
+  transition: opacity 6s ease-out; 
+}
+
+.kawa__photo__main:hover {
+  opacity: 0.6;  
+  /* 초기 투명도 설정 */
+  transition: opacity 6s ease-out; 
+}
+
+.kawa__photo__1 {
+  display: block;
+  width: 500px;
   height: 500px;
+  padding: 0rem 2.5rem 0rem 2.5rem;
+  object-fit: cover;
+  align-items: baseline;
+  margin-right: 10px;
+}
+
+/* .kawa__photo__1__text {
+  float: left;
+} */
+
+/* Arrow UP */
+.arrow-up {
+  
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  text-align: center;
+  box-shadow: inset 5px 5px 10px 4px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+.contact {
+  background-color: #262626;
+  color: var(--color-blue-white);
+  padding: 1rem;
+  text-align: center;
+}
+
+.footer__title {
+  font-size: 3rem;
+  margin: 1rem 0;
+  color: var(--color-blue-white);
+}
+
+.footer__text {
+  padding: 5px;
+  white-space: pre-wrap;
+}
+
+.footer__text__copyrights {
+  padding: 5px;
+  color: #333333;
 }
