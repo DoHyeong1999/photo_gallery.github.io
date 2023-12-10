@@ -335,6 +335,7 @@ button:focus {
   width: 100%;
   padding: none;
   object-fit: cover;
+  box-shadow: 0px 1.4px 10px var(--color-dark-grey);
 }
 
 /* background: rgba(255, 255, 255, 0.09);
@@ -367,12 +368,14 @@ border: 1px solid rgba(255, 255, 255, 0.3); */
 }
 
 /* KINSHICHO */
-
+#kinshicho {
+  padding: 50px 0;
+}
 .kin__item {
   display: flex;
   justify-content: center;
   margin: 0 80px;
-
+  padding: 50px 0;
 }
 
 .kin__photo__main {
