@@ -517,6 +517,7 @@ border: 1px solid rgba(255, 255, 255, 0.3); */
   text-align: center;
   /* box-shadow: inset 5px 5px 10px 4px rgba(0,0,0,0.1); */
   box-shadow: inset 6px 3.5px 4.5px 1.5px rgba(0,0,0,0.1);
+  transition: opacity 300ms ease-in;
 }
 
 /* Footer */
