@@ -1,3 +1,5 @@
+'use strict';
+
 // HOME 섹션을 아래로 스크롤시 투명하게 처리
 const home = document.querySelector('.home__container');
 const homeHeight = home.offsetHeight;
