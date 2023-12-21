@@ -435,6 +435,8 @@ border: 1px solid rgba(255, 255, 255, 0.3); */
 #album {
   background-color: var(--color-primary);
   color: var(--color-text);
+  padding: 30px 40px 200px 40px;
+  box-shadow: 0px 1.4px 10px var(--color-dark-grey); 
 }
 
 .categories {
@@ -485,6 +487,12 @@ border: 1px solid rgba(255, 255, 255, 0.3); */
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 1rem;
+  transition: all 250ms ease-out;
+}
+
+.projects.anim-out {
+  opacity: 0;
+  transform: scale(0.98) translateY(5px);
 }
 
 .project {

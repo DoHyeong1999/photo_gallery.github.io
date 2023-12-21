@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="css/style.css">
   <!-- Javascript -->
   <script src="src/main.js" defer></script>
+  <script src="src/projects.js" defer></script>
   <script src="src/active_menu.js" defer></script>
 </head>
 
@@ -226,28 +227,28 @@
         <p class="description">Photos</p>
         <ul class="categories">
           <li>
-            <button class="category category--selected">
+            <button class="category category--selected" data-category="all">
               All <span class="category__count">8</span>
             </button>
           </li>
           <li>
-            <button class="category">
-              kawaguchi <span class="category__count">3</span>
+            <button class="category" data-category="kawaguchi">
+              Kawaguchi <span class="category__count">3</span>
             </button>
           </li>
           <li>
-            <button class="category">
-              shinkoiwa <span class="category__count">3</span>
+            <button class="category" data-category="shinkoiwa">
+              Shinkoiwa <span class="category__count">3</span>
             </button>
           </li>
           <li>
-            <button class="category">
-              kinshicho <span class="category__count">2</span>
+            <button class="category" data-category="kinshicho">
+              Kinshicho <span class="category__count">2</span>
             </button>
           </li>
         </ul>
         <ul class="projects">
-          <li class="project">
+          <li class="project" data-type="kawaguchi">
             <a href="#kawaguchi">
               <img src="images/kawa_1A.png" alt="project1" class="project__img" />
               <div class="project__metadata">
@@ -256,7 +257,7 @@
               </div>
             </a>
           </li>
-          <li class="project">
+          <li class="project" data-type="kawaguchi">
             <a href="#kawaguchi">
               <img src="images/kawa_1A.png" alt="project2" class="project__img" />
               <div class="project__metadata">
@@ -265,7 +266,7 @@
               </div>
             </a>
           </li>
-          <li class="project">
+          <li class="project" data-type="kawaguchi">
             <a href="#kawaguchi">
               <img src="images/kawa_1A.png" alt="project3" class="project__img" />
               <div class="project__metadata">
@@ -274,7 +275,7 @@
               </div>
             </a>
           </li>
-          <li class="project">
+          <li class="project" data-type="shinkoiwa">
             <a href="#shinkoiwa">
               <img src="images/kawa_1A.png" alt="project4" class="project__img" />
               <div class="project__metadata">
@@ -283,7 +284,7 @@
               </div>
             </a>
           </li>
-          <li class="project">
+          <li class="project" data-type="shinkoiwa">
             <a href="#shinkoiwa">
               <img src="images/kawa_1A.png" alt="project5" class="project__img" />
               <div class="project__metadata">
@@ -292,7 +293,7 @@
               </div>
             </a>
           </li>
-          <li class="project">
+          <li class="project" data-type="shinkoiwa">
             <a href="#shinkoiwa">
               <img src="images/kawa_1A.png" alt="project6" class="project__img" />
               <div class="project__metadata">
@@ -301,7 +302,7 @@
               </div>
             </a>
           </li>
-          <li class="project">
+          <li class="project" data-type="kinshicho">
             <a href="#kinshicho">
               <img src="images/kawa_1A.png" alt="project7" class="project__img" />
               <div class="project__metadata">
@@ -310,7 +311,7 @@
               </div>
             </a>
           </li>
-          <li class="project">
+          <li class="project" data-type="kinshicho">
             <a href="#kinshicho">
               <img src="images/kawa_1A.png" alt="project8" class="project__img" />
               <div class="project__metadata">
