@@ -276,11 +276,11 @@ button:focus {
 .kawa__photo {
   width: 500px;
   height: 500px;
-  padding: none;
+  padding: 2.5rem 1rem 1rem 1rem;
   object-fit: cover;
   align-items: baseline;
   /* margin-right: 10px; */
-  box-shadow: 0px 1.4px 10px var(--color-dark-grey); 
+  box-shadow: 0px 0.1px 1px var(--color-dark-grey); 
 }
 
 .kawa__photo__main {
@@ -320,21 +320,21 @@ button:focus {
 .kawa__photo__1 {
   width: 400px;
   height: 400px;
-  padding: 0rem 2.5rem 0rem 2.5rem;
+  padding: 2.5rem 0rem 0rem 0rem;
   object-fit: cover;
   align-items: baseline;
   /* margin-right: 10px; */
-  box-shadow: 0px 1.4px 10px var(--color-dark-grey); 
+  box-shadow: 0px 0.1px 1px var(--color-dark-grey); 
 }
 
 .kawa__photo__2 {
   width: 560px;
   height: 400px;
-  padding: none;
+  padding: 2.5rem 0rem 0rem 0rem;
   object-fit: cover;
   align-items: baseline;
   /* margin-right: 10px; */
-  box-shadow: 0px 1.4px 10px var(--color-dark-grey);
+  box-shadow: 0px 0.1px 1px var(--color-dark-grey);
 }
 
 .kawa__photo__end {
@@ -364,7 +364,9 @@ border: 1px solid rgba(255, 255, 255, 0.3); */
   justify-content: center;
   margin: 5rem;
   height: 100%;
-  font-size: var(--font-medium);
+  font-size: 18px;
+  line-height: 40px;
+  text-align: left;
   font-weight: var(--weight-semi-thin);
 }
 
